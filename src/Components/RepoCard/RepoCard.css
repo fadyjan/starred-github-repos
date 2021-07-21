@@ -1,0 +1,59 @@
+.RepoContainerCard{
+    display: flex;
+    justify-content: space-around;
+    /* width: 500px; */
+    height: 12vh;
+}
+
+.ImageContianer{
+    width: 20%;
+    /* flex-grow: 1; */
+    background-color: aqua;
+}
+
+.RepoContent{
+        width: 70%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: space-between;
+        flex-direction : column 
+}
+.RepoName{
+    background-color: white;
+    display: inline-flex;
+    font-size: 24px;
+    font-weight: bold;
+}
+.RepoDescription{
+    /* background-color: black; */
+    display: inline-flex;
+
+}
+
+.RepoInfo{
+    /* background-color:; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.NbStars{
+/* background-color: ; */
+flex-grow: 1;
+border-style: solid;
+margin-right: 2%;
+}
+
+.NbIssues{
+    /* background-color: white; */
+    flex-grow: 2;
+    border-style: solid;
+
+}
+
+.TimeInterval{
+    /* background-color:brown; */
+    flex-grow:4;
+}
