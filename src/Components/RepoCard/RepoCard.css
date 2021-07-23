@@ -66,3 +66,14 @@
   flex-grow: 2;
   text-align: start;
 }
+
+@media only screen and (max-width: 530px) {
+  /* For mobile phones: */
+  .RepoContainerCard{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height:28vh;
+      margin-top: 15px;
+  }
+}
