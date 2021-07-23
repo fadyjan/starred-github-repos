@@ -1,18 +1,40 @@
-import React from "react";
-import "./RepoCard.css";
+import React, { useState, useEffect } from "react";
 
-const RepoCard = () => {
+import "./RepoCard.css";
+const axios = require("axios").default;
+
+const RepoCard = (props) => {
+  const url = props.record.owner.avatar_url;
+  const Time = props.record.created_at;
+  const TrimedTime = Time.split("T");
   return (
     <div className="RepoContainerCard">
-      <div className="ImageContianer"></div>
+      <div className="ImageContianer">
+        <img
+          src={`${url}`}
+          alt="Girl in a jacket"
+          width="45%"
+          height="100%"
+        ></img>
+      </div>
       <div className="RepoContent">
-        <div className="RepoName"> Tensorflow</div>
-        <div className="RepoDescription">An Open Source Machine Learning FrameWork for Everyone http://tensorflow.org</div>
+        <div className="RepoName"> {props.record.name}</div>
+        <div className="RepoDescription">{props.record.description}</div>
         <div className="RepoInfo">
-            <label className="NbStars">Starts</label>
-            <label className="NbIssues">Issues</label>
-            <label className="TimeInterval">Submitted 30 dats ago by tensorflow</label>
-            </div>
+          <div className="NbContainer">
+            <label className="NbStars">
+              Stars : {props.record.stargazers_count}
+            </label>
+            <label className="NbIssues">
+              Issues : {props.record.open_issues_count}
+            </label>
+          </div>
+          <div className="TimeContainer">
+            <label className="TimeInterval">
+              Sumbit at {TrimedTime[0]} by {props.record.owner.login}
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -24,7 +24,9 @@ const WrappingRepoCards = () => {
 
   return (
     <div id="CardsCotainer">
-
+                  {repos.map((record) => {
+        return <RepoCard record={record}></RepoCard>;
+      })}
     </div>
   );
 };
