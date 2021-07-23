@@ -1,59 +1,68 @@
-.RepoContainerCard{
-    display: flex;
-    justify-content: space-around;
-    /* width: 500px; */
-    height: 12vh;
+.RepoContainerCard {
+  display: flex;
+  justify-content: space-around;
+  /* width: 500px; */
+  height: 12vh;
 }
 
-.ImageContianer{
-    width: 20%;
-    /* flex-grow: 1; */
-    background-color: aqua;
+.ImageContianer {
+  width: 20%;
+  /* flex-grow: 1; */
 }
 
-.RepoContent{
-        width: 70%;
-        /* background-color: brown; */
-        display: flex;
-        justify-content: space-between;
-        flex-direction : column 
+.RepoContent {
+  width: 70%;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.RepoName{
-    background-color: white;
-    display: inline-flex;
-    font-size: 24px;
-    font-weight: bold;
+.RepoName {
+  background-color: white;
+  display: inline-flex;
+  font-size: 24px;
+  font-weight: bold;
 }
-.RepoDescription{
-    /* background-color: black; */
-    display: inline-flex;
-
-}
-
-.RepoInfo{
-    /* background-color:; */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-
+.RepoDescription {
+  /* background-color: black; */
+  display: inline-flex;
 }
 
-.NbStars{
-/* background-color: ; */
-flex-grow: 1;
-border-style: solid;
-margin-right: 2%;
+.RepoInfo {
+  /* background-color:; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* width: 70%; */
 }
 
-.NbIssues{
-    /* background-color: white; */
-    flex-grow: 2;
-    border-style: solid;
-
+.NbContainer {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.TimeContainer {
+  width: 50%;
 }
 
-.TimeInterval{
-    /* background-color:brown; */
-    flex-grow:4;
+.NbStars {
+  flex-grow: 1;
+  border-style: solid;
+  margin-right: 2%;
+  text-align: center;
+  /* width: 50%; */
+}
+
+.NbIssues {
+  flex-grow: 1;
+  border-style: solid;
+  margin-right: 2%;
+  /* width: 50%; */
+  text-align: center;
+}
+
+.TimeInterval {
+  flex-grow: 2;
+  text-align: start;
 }
