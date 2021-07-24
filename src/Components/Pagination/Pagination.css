@@ -1,0 +1,16 @@
+#PaginationContainer{
+    margin: auto;
+    width: 35%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 530px) {
+    /* For mobile phones: */
+    #PaginationContainer{
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        
+    }
+  }
+  
