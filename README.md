@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+Starred Github Repos Using React 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About Project 
+implement a small webapp that will list the most starred Github repos that were created in the last 30 days by fetching the sorted JSON data directly from the Github API
+* Project is build with React Js 
+* Fetching data with Axios Library 
+* Pagenation component Styled with bootstrap react
+
+## Features
+* You are able to list the most starred Github repos that were created in the last 30 days. 
+* You are able to see the results as a list. One repository per row. 
+* You are able to see each repo/row the following details :
+  * Repository name
+  * Repository description 
+  * Number of stars for the repo. 
+  * Number of issues for the repo.
+  * Username and avatar of the owner. 
+* You are able to keep scrolling and new results should appear (pagination).
+
 
 ## Available Scripts
 
@@ -14,10 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
