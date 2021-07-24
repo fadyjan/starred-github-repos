@@ -14,6 +14,7 @@ const WrappingRepoCards = (props) => {
       //   console.log(response.data);
       setRepos(response.data.items);
     } catch (error) {
+      alert(error);
       console.error(error);
     }
   }
