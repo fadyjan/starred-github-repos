@@ -1,8 +1,8 @@
 .RepoContainerCard {
   display: flex;
   justify-content: space-around;
-  /* width: 500px; */
-  height: 12vh;
+  /* margin: 2%; */
+  height: 15vh;
 }
 
 .ImageContianer {
@@ -67,13 +67,13 @@
   text-align: start;
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .RepoContainerCard{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height:28vh;
+      height:auto;
       margin-top: 15px;
   }
 }
